@@ -24,4 +24,4 @@ async def get_id(id: int):
         for column in reader:
             if int(column[0]) == id:
                 return Person(id=int(column[0]),name=column[1], age=column[2] )
-    return{"message": "Person not found"}
+    return{"message": "Person not found"} 
